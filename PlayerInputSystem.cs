@@ -44,6 +44,7 @@ public class PlayerInputSystem : IEcsRunSystem
                     break;
                 case TouchPhase.Ended:
                     _playerInput.PositionFromAnchor = Vector2.zero;
+                    _playerInput.FrameChange = Vector2.zero;
                     break;
 
             }
